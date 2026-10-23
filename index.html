@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Country Explorer</h1>
+        <p>Explore countries around the world</p>
+    </header>
+
+    <main>
+        <section id="filters">
+            <div id="country-cards-container"></div>
+            <input type="text" id="country-name" placeholder="Search country name">
+
+            <select id="region">
+                <option value="All Regions">All Regions</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">Americas</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+
+            </select>
+
+            <input type="number" id="population" placeholder="Maximum population" min="0">
+        </section>
+        <p id="error-message"></p>
+        <div id="country-cards-container"></div>
+        <button id="show-more">Show More</button>
+        <button id="back-button" class="back-button">
+            &larr; Back to Countries
+        </button>
+    </main>
+    <p id="no-results" style="display: none;">
+        No countries match the filter criteria.
+    </p>
+    <p id="no-results" style="display: none;">
+        No countries match the filter criteria.
+    </p>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
